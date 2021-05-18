@@ -863,6 +863,7 @@ gammavariate = _inst.gammavariate
 gauss = _inst.gauss
 betavariate = _inst.betavariate
 paretovariate = _inst.paretovariate
+binomialvariate = _inst.binomialvariate
 weibullvariate = _inst.weibullvariate
 getstate = _inst.getstate
 setstate = _inst.setstate
@@ -907,6 +908,10 @@ def _test(N=2000):
     _test_generator(N, gauss, (0.0, 1.0))
     _test_generator(N, betavariate, (3.0, 3.0))
     _test_generator(N, triangular, (0.0, 1.0, 1.0 / 3.0))
+    _test_generator(N, binomialvariate, (10, 0.5))
+    _test_generator(N, binomialvariate, (100, 0.5))
+    _test_generator(N, binomialvariate, (1000, 0.5))
+    _test_generator(N, binomialvariate, (10000, 0.5))
 
 
 ## ------------------------------------------------------
