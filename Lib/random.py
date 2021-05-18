@@ -783,9 +783,9 @@ class Random(_random.Random):
     def binomialvariate(self, n, p):
         """Binomial distribution.
 
-        n is a positive integer for the number of Bernoulli trials.
+        *n* is a positive integer for the number of Bernoulli trials.
 
-        p is a float in [0.0, 1.0] for the probability of success
+        *p* is a float in [0.0, 1.0] for the probability of success
             in each trial.
 
         Returns an integer in the range [0, n] for the number of
