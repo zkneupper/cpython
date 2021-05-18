@@ -779,6 +779,21 @@ class Random(_random.Random):
         u = 1.0 - self.random()
         return alpha * (-_log(u)) ** (1.0 / beta)
 
+    def binomialvariate(self, n, p):
+        """Binomial distribution.
+
+        n is a positive integer for the number of Bernoulli trials
+
+        p is a float in [0.0, 1.0] for the probability of success
+            in each trial
+
+        Returns an integer in the range [0,n] for the number of
+            successes in *n* Bernoulli trials each with a
+            probability *p* of success.
+
+        """
+        return sum(self.random() < p for i in range(n))
+
 
 ## ------------------------------------------------------------------
 ## --------------- Operating System Random Source  ------------------
