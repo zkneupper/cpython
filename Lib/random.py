@@ -68,6 +68,7 @@ __all__ = [
     "Random",
     "SystemRandom",
     "betavariate",
+    "binomialvariate",
     "choice",
     "choices",
     "expovariate",
