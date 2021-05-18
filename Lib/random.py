@@ -788,7 +788,7 @@ class Random(_random.Random):
         p is a float in [0.0, 1.0] for the probability of success
             in each trial
 
-        Returns an integer in the range [0,n] for the number of
+        Returns an integer in the range [0, n] for the number of
             successes in *n* Bernoulli trials each with a
             probability *p* of success.
 
