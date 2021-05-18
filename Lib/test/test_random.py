@@ -1052,6 +1052,8 @@ class TestDistributions(unittest.TestCase):
                 (g.paretovariate, (float('inf'),), 1.0),
                 (g.weibullvariate, (10.0, float('inf')), 10.0),
                 (g.weibullvariate, (0.0, 10.0), 0.0),
+                (g.binomialvariate, (10, 0.0), 0),
+                (g.binomialvariate, (10, 1.0), 10),
             ]:
             for i in range(N):
                 self.assertEqual(variate(*args), expected)
