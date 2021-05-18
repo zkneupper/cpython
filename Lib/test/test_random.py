@@ -1003,6 +1003,9 @@ class TestDistributions(unittest.TestCase):
         g.random = x[:].pop; g.gammavariate(200.0, 1.0)
         g.random = x[:].pop; g.betavariate(3.0, 3.0)
         g.random = x[:].pop; g.triangular(0.0, 1.0, 1.0/3.0)
+        g.random = x[:].pop; g.binomialvariate(10, 0.0)
+        g.random = x[:].pop; g.binomialvariate(10, 0.5)
+        g.random = x[:].pop; g.binomialvariate(10, 1.0)
 
     def test_avg_std(self):
         # Use integration to test distribution average and standard deviation.
